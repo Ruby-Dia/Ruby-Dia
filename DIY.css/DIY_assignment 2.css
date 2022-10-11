@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: whitesmoke;
+}
+.topbar{
+  display: flex;
+  padding: 20px 0;
+  border: 1px solid black;
+  border-radius: 40px 40px 40px 40px;
+  opacity: 0.8;
+  background-color: black;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+input{
+  width: 400px;
+}
+.caret{
+  color: pink;
+}
+.search{
+  /* padding-left: 20px; */
+  text-align: right;
+  width: 50%;
+}
+.sub{
+  background-color: darkred;
+  color: white;
+  border: none;
+  padding: 5px;
+}
+section {
+  background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.3)) , url("../images/food1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 70vh;
+  position: relative;
+}
+.Bi{
+ position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  color: black;
+}
+
+.RecepieHead{
+  display: flex;
+  position: relative;
+}
+.RecepieHead h2{
+  text-align: left; width: 50%;padding: 20px;
+}
+.RecepieHead button{
+  position: absolute; width:100px; right: 0; top: 40%; background-color: black;color: white;
+}
+.Row1{
+  display: flex; width: 100%; height: 50%;
+}
+.Row2{
+  display: flex; width: 100%; height: 50%;
+}
+.container { 
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+ /* width: 100%;
+  height: 50%;*/
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6E;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+Footer{
+  background-color:black;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+}
+.category{
+  overflow: hidden;
+  overflow-y: auto;
+}
+.all{
+    background-image: url("../images/food19.jpg");
+}
+.firstlink a{
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+.Recepie{
+  background-color: gray;
+}
+@media only screen and (max-width:600px){
+  }
+  .topbar{
+    display: block;
+  }
+  .Row1{
+  display: block; width: 100%; height: 50%;
+}
+.Row2{
+  display: block; width: 100%; height: 50%;
+}
+}
+@media only screen and (min-width: 768px) {
+
+}
